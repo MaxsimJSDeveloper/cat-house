@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="КотоДім — сайт для всіх любителів котів, де ви знайдете цікаві статті, факти та інформацію про котів."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,22 +15,26 @@
     />
     <link rel="icon" href="./img/cat.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>КотоДім</title>
+    <title>КотоДім - Інформація про котів та їхні навички</title>
   </head>
 
   <body>
     <header class="header">
       <div class="container header-container">
-        <img src="./img/cat.svg" alt="cat" class="logo" />
+        <img src="./img/cat.svg" alt="Логотип Котодім" class="logo" />
         <h1 class="label">Котодім</h1>
       </div>
     </header>
     <main class="main">
       <div class="container">
-        <ul class="posts">
-          <li class="post">
+        <ul class="posts" role="list">
+          <li class="post" role="listitem">
             <a href="#">
-              <img src="./img/first-cat.png" alt="kitten" class="post-img" />
+              <img
+                src="./img/first-cat.png"
+                alt="Котеня грає з м'ячиком"
+                class="post-img"
+              />
               <div class="overlay">
                 <h2 class="post-title sub-title">
                   Коти та їхні чудові навички: від полювання до загадкових
@@ -35,11 +43,11 @@
               </div>
             </a>
           </li>
-          <li class="post">
+          <li class="post" role="listitem">
             <a href="#">
               <img
                 src="./img/second-cat.png"
-                alt="scary kitten"
+                alt="Страшне котеня"
                 class="post-img"
               />
               <div class="overlay">
@@ -50,9 +58,9 @@
               </div>
             </a>
           </li>
-          <li class="post">
+          <li class="post" role="listitem">
             <a href="#">
-              <img src="./img/third-cat.png" alt="cat" class="post-img" />
+              <img src="./img/third-cat.png" alt="Кіт" class="post-img" />
               <div class="overlay">
                 <h2 class="post-title sub-title">
                   Котячі породи для активних власників: як вибрати компаньйона
@@ -61,11 +69,18 @@
             </a>
           </li>
         </ul>
-        <section class="longread">
-          <ul class="blog">
-            <li class="blog-item">
+        <section class="longread" aria-labelledby="longread-title">
+          <h2 id="longread-title" class="title visually-hidden">
+            Довгі читання
+          </h2>
+          <ul class="blog" role="list">
+            <li class="blog-item" role="listitem">
               <a href="#" class="blog-link">
-                <img src="./img/1.png" alt="cat" class="blog-photo" />
+                <img
+                  src="./img/1.png"
+                  alt="Забавні факти про котів"
+                  class="blog-photo"
+                />
                 <div class="wrapper">
                   <h2 class="blog-title sub-title">
                     Забавні факти про котів, які вас здивують
@@ -77,9 +92,9 @@
                 </div>
               </a>
             </li>
-            <li class="blog-item">
+            <li class="blog-item" role="listitem">
               <a href="#" class="blog-link">
-                <img src="./img/2.png" alt="cats" class="blog-photo" />
+                <img src="./img/2.png" alt="Породи котів" class="blog-photo" />
                 <div class="wrapper">
                   <h2 class="blog-title sub-title">
                     Найпопулярніші породи котів: який кіт підходить вам?
@@ -91,9 +106,13 @@
                 </div>
               </a>
             </li>
-            <li class="blog-item">
+            <li class="blog-item" role="listitem">
               <a href="#" class="blog-link">
-                <img src="./img/4.png" alt="red-cat" class="blog-photo" />
+                <img
+                  src="./img/4.png"
+                  alt="Догляд за котом"
+                  class="blog-photo"
+                />
                 <div class="wrapper">
                   <h2 class="blog-title sub-title">
                     Як піклуватися про вашого пухнастого друга: догляд за котом
@@ -105,9 +124,13 @@
                 </div>
               </a>
             </li>
-            <li class="blog-item">
+            <li class="blog-item" role="listitem">
               <a href="#" class="blog-link">
-                <img src="./img/3.png" alt="red-cat" class="blog-photo" />
+                <img
+                  src="./img/3.png"
+                  alt="Коти в культурі"
+                  class="blog-photo"
+                />
                 <div class="wrapper">
                   <h2 class="blog-title sub-title">
                     Історія та культурна значущість котів в усьому світ
@@ -122,62 +145,62 @@
           </ul>
           <div class="socials">
             <h2 class="socials-title title">Соцмережі</h2>
-            <ul class="socials-list">
-              <li class="socials-item">
+            <ul class="socials-list" role="list">
+              <li class="socials-item" role="listitem">
                 <a href="#" class="social-link">
                   <img
                     src="./img/instagram.png"
-                    alt="instagram"
+                    alt="Instagram"
                     class="social-icon"
                   />
                   <p class="social-subscripers">230.000</p>
                 </a>
               </li>
-              <li class="socials-item">
+              <li class="socials-item" role="listitem">
                 <a href="#" class="social-link">
                   <img
                     src="./img/facebook.png"
-                    alt="facebook"
+                    alt="Facebook"
                     class="social-icon"
                   />
                   <p class="social-subscripers">230.000</p>
                 </a>
               </li>
-              <li class="socials-item">
+              <li class="socials-item" role="listitem">
                 <a href="#" class="social-link">
                   <img
                     src="./img/youtube.png"
-                    alt="youtube"
+                    alt="YouTube"
                     class="social-icon"
                   />
                   <p class="social-subscripers">230.000</p>
                 </a>
               </li>
-              <li class="socials-item">
+              <li class="socials-item" role="listitem">
                 <a href="#" class="social-link">
                   <img
                     src="./img/tiktok.png"
-                    alt="tiktok"
+                    alt="TikTok"
                     class="social-icon"
                   />
                   <p class="social-subscripers">230.000</p>
                 </a>
               </li>
-              <li class="socials-item">
+              <li class="socials-item" role="listitem">
                 <a href="#" class="social-link">
                   <img
                     src="./img/github.png"
-                    alt="github"
+                    alt="GitHub"
                     class="social-icon"
                   />
                   <p class="social-subscripers">230.000</p>
                 </a>
               </li>
-              <li class="socials-item">
+              <li class="socials-item" role="listitem">
                 <a href="#" class="social-link">
                   <img
                     src="./img/twitter.png"
-                    alt="twitter"
+                    alt="Twitter"
                     class="social-icon"
                   />
                   <p class="social-subscripers">230.000</p>
@@ -187,14 +210,14 @@
           </div>
           <div class="video">
             <h2 class="video-title title">Відео з пухнастиком</h2>
-            <img src="./img/picture.png" alt="video" />
+            <img src="./img/picture.png" alt="Дивіться наше відео з котами" />
           </div>
         </section>
       </div>
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <img src="./img/cat.svg" alt="cat" class="logo" />
+        <img src="./img/cat.svg" alt="Логотип Котодім" class="logo" />
         <h2 class="label">Котодім</h2>
       </div>
     </footer>
